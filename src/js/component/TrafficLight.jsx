@@ -30,7 +30,7 @@ const TrafficLight = () => {
 		if(onOff==true){
 			const interval= setInterval(()=>{ 
 				setSelector((selector)=>{
-					if (selector>2){
+					if (selector>=2){
 						setSelector(0)
 					} else setSelector(selector+1);
 				})
